@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    /* background-color: ; */
+    background-color: rgba(0, 0, 0, 0.744);
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.89);
+    padding: 0 20px;
+    align-items: center;
+}
+
+.nav img{
+    width: 70px;
+    height: 70px;
+}
+.nav h1{
+    color: #fff;
+    font-family:  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.background-image{
+    background-image: url(./images/blog_we.png);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.toggle{
+    cursor: pointer;
+    font-size: 18px;
+}
+.toggle i{
+    padding: 3px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    /* padding: 0 80px; */
+}
+.form-control{
+    width: 650px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.form-control input{
+    width: 100%;
+    padding: 17px 14px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.form-control i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.dropDownCon{
+    width: 400px;
+    position: relative;
+    
+}
+.dropDown{
+    width: 100%;
+    padding: 17px 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #fff;
+}
+.dropDown button{
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+.drop{
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 17px 14px;
+    width: 100%;
+    top: 4rem;
+    border-radius: 5px;
+    background-color: white;
+}
+.drop p{
+    margin: 5px 0;
+    border-bottom: 1px solid rgb(128, 114, 114);
+}
+
+/* Country select css */
+
+.countries{
+    padding: 30px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 70px;
+    justify-content: center;
+    row-gap: 20px;
+    
+}
+.country{
+    min-height: 350px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(10, 16, 16, 0.201); */
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.082);
+
+}
+.country-img{
+    height: 250px;
+    object-fit: cover;
+}
+.country-img img{
+    width: 100%;
+    height: 100%;
+}
+.country-info{
+    padding: 20px 17px;
+}
+.country-info h5{
+    padding: 8px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to bottom right, rgb(0, 153, 255), rgb(0, 255, 204));
+    color: rgba(0, 0, 0, 0.89);
+}
+.country p{
+    letter-spacing: 1px;
+}
+.country p>strong{
+    font-weight: 600;
+    color:rgba(253, 220, 179, 0.97);
+}
+.hideDropDown{
+    display: none;
+    /* transition: all ease 5s; */
+}
+.showDropDown{
+    display: block;
+    transition: all 1s;
+}
+.region{
+    cursor: pointer;
+}
+
+.countryModal{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.082);
+    /* position: relative; */
+}
+.back{
+    position: absolute;
+    top: 1.5rem;
+    left: 30px;
+    
+    background-color: #fdfdfd;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.modal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #fdfdfd ;
+    padding: 30px;
+
+}
+.leftModal{
+    width: 50%;
+}
+.leftModal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rightModal{
+    width: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.rightModal h1{
+    margin: 10px 0;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.modalInfo{
+    display:flex ;
+    justify-content: space-between;
+
+}
+.inner p{
+    letter-spacing: 1px;
+}
+.inner p>strong{
+    font-weight: 600;
+}
+.show{
+    display: none;
+}
